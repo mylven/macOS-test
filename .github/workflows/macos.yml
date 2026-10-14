@@ -1,0 +1,14 @@
+
+name: macOS test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - name: Show macOS version
+        run: |
+          sw_vers
+          uname -a
